@@ -61,7 +61,7 @@
       <wheelDiameter>${wheel_diameter}</wheelDiameter>
       <robotBaseFrame>base_link</robotBaseFrame>
       <torque>${wheel_torque}</torque>
-      <commandTopic>cmd_vel_mux/input/teleop</commandTopic>
+      <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
       <broadcastTF>50</broadcastTF>
@@ -70,5 +70,4 @@
       <covariance_yaw>0.01</covariance_yaw>
     </plugin>
   </gazebo>
-
 </robot>
