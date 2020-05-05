@@ -1,0 +1,31 @@
+<robot name="gazebo_dock_bundle">
+    <link name="dock_bundle_base_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1.0" />
+            <inertia ixx="0.074166666666667" ixy="0" ixz="0" iyy="0.0585416666667" iyz="0" izz="0.026041666666667" />
+        </inertial>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.2 0.2 0.2"/>
+            </geometry>
+        </collision>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://aion_r1_gazebo/models/dock_bundle.dae"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <gazebo reference="gazebo_dock_bundle_link">
+        <kp>100000</kp>
+        <kd>100000</kd>
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <fpdir1>1 0 0</fpdir1>
+    </gazebo>
+</robot>
